@@ -1,0 +1,16 @@
+<h1> Volám sa {{meno}}.</h1>
+{% if vek >= 18 %}
+<p>Som dospelý/á.</p>
+{% else %}
+<p> Mám {{vek}} rokov.</p>
+{% endif %}
+
+
+<h2>Záľuby:</h2>
+<ul>
+    {% for z in zaluby %}
+    <li> {{z}}</li>
+    {% empty %}
+    <li> Nemám zaľuby.</li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,19 @@
+<h1>Moja vizitka</h1>
+
+<p>Meno: {{ meno }}</p>
+<p>Trieda: {{ trieda }}</p>
+<p>Vek: {{ vek }}</p>
+
+{% if vek >= 18 %}
+    <p>Som plnoletý.</p>
+{% else %}
+    <p>Nie som plnoletý.</p>
+{% endif %}
+
+<h2>Obľúbené predmety</h2>
+
+<ul>
+    {% for predmet in predmety %}
+        <li>{{ predmet }}</li>
+    {% endfor %}
+</ul>

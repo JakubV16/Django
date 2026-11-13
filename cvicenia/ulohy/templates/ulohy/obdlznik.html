@@ -1,0 +1,16 @@
+<h1>Výpočet obdĺžnika</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <label>Šírka obdĺžnika:</label>
+    <input type="number" step="any" name="sirka" required>
+    <label>Výška obdĺžnika:</label>
+    <input type="number" step="any" name="vyska" required>
+    <button type="submit">Vypočítať</button>
+</form>
+
+{% if obvod  %}
+    <h2>Výsledky:</h2>
+    <p>Obvod obdĺžnika je: {{ obvod }}</p>
+    <p>Obsah obdĺžnika je: {{ obsah }}</p>
+{% endif %}

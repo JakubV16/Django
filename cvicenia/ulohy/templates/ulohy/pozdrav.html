@@ -1,0 +1,8 @@
+<h1>Pozdrav</h1>
+<form method=="get">
+	<label> Meno :<input type="text" name="meno"></label>
+	<button>Odoslat</button>
+</form>
+{% if meno %}
+    <p>Ahoj , {{meno}}</p>
+{%endif%}

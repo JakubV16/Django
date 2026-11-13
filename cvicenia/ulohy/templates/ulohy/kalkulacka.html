@@ -1,0 +1,21 @@
+<h1>Kalkulačka</h1>
+
+<form method="post">
+    {% csrf_token %}
+
+    <input type="number" name="a" required>
+
+    <select name="operacia">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+    </select>
+
+    <input type="number" name="b" required>
+
+    <button type="submit">Vypočítať</button>
+</form>
+
+{% if vysledok %}
+    <p>Výsledok je: {{ vysledok }}</p>
+{% endif %}

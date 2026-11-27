@@ -1,3 +1,6 @@
+{% extends "ulohy/base.html" %}
+{% block titulok%}vek{%endblock%}
+{% block obsah%}
 <h1>Výpočet veku</h1>
 
 <form method="post">
@@ -14,3 +17,4 @@
 {% if vek %}
     <h2>Máš {{ vek }} rokov.</h2>
 {% endif %}
+{%endblock%}

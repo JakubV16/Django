@@ -1,3 +1,6 @@
+{% extends "ulohy/base.html" %}
+{% block titulok%}Pozdrav{%endblock%}
+{% block obsah%}
 <h1>Pozdrav</h1>
 <form method=="get">
 	<label> Meno :<input type="text" name="meno"></label>
@@ -6,3 +9,4 @@
 {% if meno %}
     <p>Ahoj , {{meno}}</p>
 {%endif%}
+{%endblock%}

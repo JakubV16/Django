@@ -1,3 +1,6 @@
+{% extends "ulohy/base.html" %}
+{% block titulok%}kalulacka{%endblock%}
+{% block obsah%}
 <h1>Kalkulačka</h1>
 
 <form method="post">
@@ -19,3 +22,4 @@
 {% if vysledok %}
     <p>Výsledok je: {{ vysledok }}</p>
 {% endif %}
+{%endblock%}

@@ -1,3 +1,6 @@
+{% extends "ulohy/base.html" %}
+{% block titulok%}Obdlžnik{%endblock%}
+{% block obsah%}
 <h1>Výpočet obdĺžnika</h1>
 
 <form method="post">
@@ -14,3 +17,4 @@
     <p>Obvod obdĺžnika je: {{ obvod }}</p>
     <p>Obsah obdĺžnika je: {{ obsah }}</p>
 {% endif %}
+{%endblock%}

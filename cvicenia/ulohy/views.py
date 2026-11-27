@@ -82,3 +82,7 @@ def vek(request):
         vek = dnes.year - rok
 
     return render(request, "ulohy/vek.html", {"vek": vek})
+
+
+def index(request):
+    return render(request, "ulohy/index.html")

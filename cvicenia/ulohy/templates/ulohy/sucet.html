@@ -1,3 +1,6 @@
+{% extends "ulohy/base.html" %}
+{% block titulok%}Súčet{%endblock%}
+{% block obsah%}
 <h1>Súčet dvoch čísel </h1>
 
 <form method="post">
@@ -9,3 +12,4 @@
 {% if vysledok %}
     <p> Výsledok je {{vysledok}}</p>
 {%endif%}
+{%endblock%}
